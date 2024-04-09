@@ -40,6 +40,7 @@ fieldset {
 fieldset > div {
   display: flex;
   gap: 12px;
+  
 }
 
 .input-wrapper {
@@ -59,12 +60,13 @@ fieldset > div {
 }
 
 input {
-  all: unset;
+ /* all: unset; */
 }
+
 
 fieldset legend, section h2{
   font:  700 16px/140% 'Roboto', sans-serif;  
-  color: #E1E1E6;
+  color: #38bb43;
   padding-bottom: 16px ;
 }
 

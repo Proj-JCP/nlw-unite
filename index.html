@@ -2,6 +2,23 @@
 <html>
 
   <head>
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body>
+    <fieldset>
+      <legend>Evento:</legend>
+      <legend>
+        <h2>Mágico de OZ - Desventuras em Série</h2>
+      </legend>
+      <legend>
+        <h3>Data: 15/05/2024 - Horario: 19:00</h3>
+      </legend>
+    </fieldset>
+
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
@@ -20,15 +37,12 @@
       dayjs.locale('pt-br')
     </script>
 
-    <script type="text/javascript" src="index.js" defer="">
+    <script type="text/javascript" src="./index.js" defer="">
     </script>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./index.css">
 
-    <script type="text/javascript" src="index.js" defer=""></script>
-    <link rel="stylesheet" href="index.css">
-  </head>
 
-  <body>
+
 
 
     <header>
@@ -85,12 +99,40 @@
 
 
                 <input type="email" placeholder="Email" name="email" required="">
+
               </div>
 
               <button>
                 REALIZAR INSCRIÇÃO
               </button>
             </div>
+          </div>
+        </fieldset>
+
+        <div>
+          ** ** **
+        </div>
+
+        <fieldset>
+          <div class="input-wrapper">
+            <fieldset>
+              <legend>Seleção de Poltronas:</legend>
+              <input type="checkbox" id="A1" name="poltrona" value="A1">
+              <label for="a1">A1</label>
+
+              <input type="checkbox" id="A2" name="poltrona" value="A2">
+              <label for="a2">A2</label>
+              <input type="checkbox" id="B2" name="poltrona" value="B2">
+              <label for="a2">B2</label>
+
+              <input type="checkbox" id="B3" name="poltrona" value="B3">
+              <label for="B3">B3</label>
+
+              <!-- Adicione os checkboxes restantes para as poltronas -->
+
+              <input type="checkbox" id="M12" name="poltrona" value="M12">
+              <label for="m12">M12</label>
+            </fieldset>
           </div>
         </fieldset>
       </form>
@@ -105,6 +147,7 @@
                 <th>Participante</th>
                 <th>Data da Inscrição</th>
                 <th>Data do Check-in</th>
+                <th>Poltronas</th>
               </tr>
             </thead>
 
@@ -114,6 +157,7 @@
           </table>
         </div>
       </section>
+
 
     </div>
     <script src="./index.js"></script>

@@ -3,61 +3,71 @@ let participantes = [
     nome: "Diego Fernandes",
     email: "diego@gmail.com",
     dataInscricao: new Date(2024, 2, 1, 19, 23),
-    dataCheckIn: new Date(2024, 2, 1, 20, 20)
+    dataCheckIn: new Date(2024, 2, 1, 20, 20),
+    poltrona:"A1"
   },
   {
     nome: "Mayk Brito",
     email: "mayk@gmail.com",
     dataInscricao: new Date(2024, 2, 23, 19, 23),
-    dataCheckIn: null
+    dataCheckIn: null,
+    poltrona:"A1"
   },
   {
     nome: "Ana Souza",
     email: "ana@gmail.com",
     dataInscricao: new Date(2024, 0, 3, 19, 23),
-    dataCheckIn: new Date(2024, 0, 4, 20, 20)
+    dataCheckIn: new Date(2024, 0, 4, 20, 20),
+    poltrona:"A1"
   },
   {
     nome: "João Silva",
     email: "joao@gmail.com",
     dataInscricao: new Date(2023, 11, 4, 19, 23),
-    dataCheckIn: new Date(2023, 11, 5, 20, 20)
+    dataCheckIn: new Date(2023, 11, 5, 20, 20),
+    poltrona:"A1"
   },
   {
     nome: "Maria Oliveira",
     email: "maria@gmail.com",
     dataInscricao: new Date(2023, 10, 5, 19, 23),
-    dataCheckIn: null
+    dataCheckIn: null,
+    poltrona:"A1"
   },
   {
     nome: "Pedro Santos",
     email: "pedro@gmail.com",
     dataInscricao: new Date(2023, 9, 6, 19, 23),
-    dataCheckIn: new Date(2023, 9, 7, 20, 20)
+    dataCheckIn: new Date(2023, 9, 7, 20, 20),
+    poltrona:"A1"
   },
   {
     nome: "Carla Lima",
     email: "carla@gmail.com",
     dataInscricao: new Date(2023, 8, 7, 19, 23),
-    dataCheckIn: new Date(2023, 8, 8, 20, 20)
+    dataCheckIn: new Date(2023, 8, 8, 20, 20),
+    poltrona:"A1"
   },
   {
     nome: "Lucas Sousa",
     email: "lucas@gmail.com",
     dataInscricao: new Date(2023, 7, 8, 19, 23),
-    dataCheckIn: new Date(2023, 7, 9, 20, 20)
+    dataCheckIn: new Date(2023, 7, 9, 20, 20),
+    poltrona:"A1"
   },
   {
     nome: "Paula Costa",
     email: "paula@gmail.com",
     dataInscricao: new Date(2023, 6, 9, 19, 23),
-    dataCheckIn: null
+    dataCheckIn: null,
+    poltrona:"A1"
   },
   {
     nome: "Gabriel Almeida",
     email: "gabriel@gmail.com",
     dataInscricao: new Date(2023, 5, 10, 19, 23),
-    dataCheckIn: null
+    dataCheckIn: null,
+    poltrona:"A1"
   }
 ];
 
@@ -92,6 +102,8 @@ const criarNovoParticipante = (participante) => {
     </td>
     <td>${dataInscricao}</td>
     <td>${dataCheckIn}</td>
+    <td>${participante.poltrona}</td>
+
   </tr>
   `
 }
@@ -119,7 +131,9 @@ const adicionarParticipante = (event) => {
     nome: dadosDoFormulario.get('nome'),
     email: dadosDoFormulario.get('email'),
     dataInscricao: new Date(),
-    dataCheckIn: null  
+    dataCheckIn: null ,
+    poltrona: dadosDoFormulario.get('poltrona')
+ 
   }
 
   // verificar se o particpante já existe
@@ -158,4 +172,5 @@ const fazerCheckIn = (event) => {
 
   // atualizar a lista de participantes
   atualizarLista(participantes)
+ 
 }
